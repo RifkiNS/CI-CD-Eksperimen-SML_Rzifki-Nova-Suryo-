@@ -1,0 +1,9 @@
+name: flood-regression
+
+python_env: requirements.txt
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: "flood_prepro.csv"}
+    command: "python modeling_tuning.py --data-path={data_path}"
