@@ -14,26 +14,7 @@ if __name__ == "__main__":
     np.random.seed(40)
 
     file_path = sys.argv[4] if len(sys.argv) > 4 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "flood_prepro.csv")
-    print(f"DEBUG: Attempting to load data from: {file_path}") # Tambahkan ini
-    if not os.path.exists(file_path): # Tambahkan ini
-        print(f"ERROR: File not found at {file_path}") # Tambahkan ini
-        sys.exit(1) # Tambahkan ini
-
-    try: # Tambahkan ini
-        data = pd.read_csv(file_path)
-        print("DEBUG: Data loaded successfully.") # Tambahkan ini
-        print("DEBUG: Columns in the loaded DataFrame:") # Tambahkan ini
-        print(data.columns.tolist()) # Tambahkan ini
-    except Exception as e: # Tambahkan ini
-        print(f"ERROR: Failed to load CSV file: {e}") # Tambahkan ini
-        sys.exit(1) # Tambahkan ini
-
-    # Periksa apakah 'FloodProbability' ada di kolom setelah dimuat
-    if 'FloodProbability' not in data.columns: # Tambahkan ini
-        print("ERROR: 'FloodProbability' column not found in the loaded DataFrame. Available columns are:") # Tambahkan ini
-        print(data.columns.tolist()) # Tambahkan ini
-        sys.exit(1) # Tambahkan ini
-
+    data = pd.read_csv(file_path)
 
     # Split data
     X_train, X_test, y_train, y_test = train_test_split(
