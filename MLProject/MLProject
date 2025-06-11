@@ -1,9 +1,12 @@
-name: flood-regression
+name: submission-SML
 
-python_env: requirements.txt
+conda_env: conda.yaml
 
 entry_points:
   main:
     parameters:
-      data_path: {type: str, default: "flood_prepro.csv"}
-    command: "python modeling_tuning.py --data-path={data_path}"
+        n_estimators: {type: int, default: 100}
+        learning_rate: {type: float, default: 0.01}
+        random_state: {type: int, default: 42}
+        dataset: {type: str, default: "flood_prepro.csv"}
+    command: "python modeling.py {n_estimators} {learning_rate} {random_state} {dataset}"
