@@ -52,8 +52,8 @@ jobs:
       
       - name: Save mlruns to repo
         run: |
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git config user.name ""${{ secrets.USERNAME }}""
+            git config user.email "${{ secrets.EMAIL }}"
             git add mlruns/
             git commit -m "Save mlruns from CI run"
             git push origin main
