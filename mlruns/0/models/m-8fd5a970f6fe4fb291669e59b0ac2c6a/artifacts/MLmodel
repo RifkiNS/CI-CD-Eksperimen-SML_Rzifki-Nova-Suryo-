@@ -1,0 +1,49 @@
+artifact_path: file:///home/runner/work/CI-CD-Eksperimen-SML_Rzifki-Nova-Suryo-/CI-CD-Eksperimen-SML_Rzifki-Nova-Suryo-/mlruns/0/models/m-8fd5a970f6fe4fb291669e59b0ac2c6a/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+is_signature_from_type_hint: false
+mlflow_version: 3.1.0
+model_id: m-8fd5a970f6fe4fb291669e59b0ac2c6a
+model_size_bytes: 145519
+model_uuid: m-8fd5a970f6fe4fb291669e59b0ac2c6a
+prompts: null
+run_id: 86f8735bbda7497698bfee20826cad2e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "id", "required": true}, {"type": "double",
+    "name": "MonsoonIntensity", "required": true}, {"type": "double", "name": "TopographyDrainage",
+    "required": true}, {"type": "double", "name": "RiverManagement", "required": true},
+    {"type": "double", "name": "Deforestation", "required": true}, {"type": "double",
+    "name": "Urbanization", "required": true}, {"type": "double", "name": "ClimateChange",
+    "required": true}, {"type": "double", "name": "DamsQuality", "required": true},
+    {"type": "double", "name": "Siltation", "required": true}, {"type": "double",
+    "name": "AgriculturalPractices", "required": true}, {"type": "double", "name":
+    "Encroachments", "required": true}, {"type": "double", "name": "IneffectiveDisasterPreparedness",
+    "required": true}, {"type": "double", "name": "DrainageSystems", "required": true},
+    {"type": "double", "name": "CoastalVulnerability", "required": true}, {"type":
+    "double", "name": "Landslides", "required": true}, {"type": "double", "name":
+    "Watersheds", "required": true}, {"type": "double", "name": "DeterioratingInfrastructure",
+    "required": true}, {"type": "double", "name": "PopulationScore", "required": true},
+    {"type": "double", "name": "WetlandLoss", "required": true}, {"type": "double",
+    "name": "InadequatePlanning", "required": true}, {"type": "double", "name": "PoliticalFactors",
+    "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-11 16:51:10.161088'

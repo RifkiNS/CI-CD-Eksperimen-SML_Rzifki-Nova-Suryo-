@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/CI-CD-Eksperimen-SML_Rzifki-Nova-Suryo-/CI-CD-Eksperimen-SML_Rzifki-Nova-Suryo-/mlruns/0/86f8735bbda7497698bfee20826cad2e/artifacts
+end_time: 1749660672624
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86f8735bbda7497698bfee20826cad2e
+run_name: hilarious-bee-288
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749660501775
+status: 3
+tags: []
+user_id: runner
