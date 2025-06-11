@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  CSV_URL: "MLProject/flooa_prepro.csv"
+  CSV_URL: "MLProject/flood_prepro.csv"
   
 jobs:
   build:
