@@ -10,6 +10,7 @@ on:
 
 env:
   CSV_URL: "MLProject/flood_prepro.csv"
+  TARGET_VAR: "FloodProbability"
   
 jobs:
   build:
